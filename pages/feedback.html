@@ -14,9 +14,10 @@
    <nav>
     <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="services.html">Menu</a></li>
         <li><a href="schedule.html">Working hours</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
        
     </ul>
 </nav>
@@ -26,42 +27,70 @@
 </div>
 </header>
 
+
+
 <div class="container">
-<div class="contact-form">
-    <h2>Contact Us</h2>
-    <form action="#" method="POST">
-        <!-- Email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <div class="contact-form">
+        <h2>Feedback Form</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-        <!-- Subject -->
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <!-- Message -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            <!-- User Rating Radio Buttons -->
+            <div class="rating-options">
+                <label>User Rating:</label>
+                <label for="good">
+                    <input type="radio" id="good" name="rating" value="good" required> Good
+                </label>
+                <label for="average">
+                    <input type="radio" id="average" name="rating" value="average" required> Average
+                </label>
+                <label for="poor">
+                    <input type="radio" id="poor" name="rating" value="poor" required> Poor
+                </label>
+            </div>
 
-        <!-- Gender Radio Buttons -->
-        <div class="gender-options">
-            <label>Gender:</label>
-            <label for="male">
-                <input type="radio" id="male" name="gender" value="male" required> Male
-            </label>
-            <label for="female">
-                <input type="radio" id="female" name="gender" value="female" required> Female
-            </label>
-        </div>
+            <!-- Service Selection Checkboxes -->
+            <div class="service-options">
+                <label>Services Used:</label>
+                <label for="service1">
+                    <input type="checkbox" id="service1" name="service" value="service1"> Service 1
+                </label>
+                <label for="service2">
+                    <input type="checkbox" id="service2" name="service" value="service2"> Service 2
+                </label>
+                <label for="service3">
+                    <input type="checkbox" id="service3" name="service" value="service3"> Service 3
+                </label>
+            </div>
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit">
-    </form>
-</div>
+            <!-- User Preferences Dropdown -->
+            <label for="preferences">User Preferences:</label>
+            <select id="preferences" name="preferences" required>
+                <option value="" disabled selected>Select your preference</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+
+            <!-- Additional Comments Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Write your comments here..." required></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </div>
 <!-- Footer -->
 <footer>
     <p>&copy; 2025 Luna Cafe & Bakery. All rights reserved.</p>
-    <p><a href="feedback.html">Contact us</a></p>
+    <p><a href="contact.html">Contact us</a></p>
 </footer>
 </body>
 </html>

@@ -56,7 +56,7 @@ nav ul li a:hover {
 }
 
 .logo img {
-    height: 300px; /* Adjust the height of the logo */
+    height: 150px; /* Adjust the height of the logo */
     width: auto; /* Maintains aspect ratio */
 }
 
@@ -176,10 +176,6 @@ footer a:hover {
 
 
 
-/* form Styling */
-
-
-
 /* Container for Form */
 .container {
     display: flex;
@@ -197,8 +193,8 @@ footer a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px; /* Limit the form width */
-    margin: 0 auto; /* Center the form horizontally */
+    max-width: 500px; 
+    margin: 30px;
 }
 
 .contact-form h2 {
@@ -270,6 +266,7 @@ footer a:hover {
     max-width: 1200px; /* Adjust based on your design */
     width: 100%;
     margin: 0 auto; /* Center the container */
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -339,3 +336,141 @@ footer a:hover {
 .open-hours td:nth-child(2) {
     color: orange;
 }
+/* Style for merged cells */
+.open-hours td[colspan="2"] {
+    text-align: center;
+    font-weight: bold;
+    color: orange; /* Tomato color for emphasis */
+}
+
+.open-hours td[rowspan] {
+    vertical-align: middle; /* Center text vertically in merged cells */
+}
+
+
+
+/* about page */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+/* Hero Section */
+.about-hero {
+   
+    color: #3c2827;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* About Content Section */
+.about-content {
+    padding: 50px 0;
+}
+
+
+
+.about-section h3 {
+    font-size: 2rem;
+    color: #4A2C2A;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section Layout */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 40px; /* Space between text and image */
+    align-items: center; /* Vertically center content */
+    margin: 200px; /* Space between sections */
+}
+
+.text-content {
+    padding-right: 20px; /* Optional: Add some padding */
+}
+
+.image-content {
+    text-align: center; /* Center the image */
+}
+
+.image-content img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Video Section Styles */
+.about-video {
+    margin-top: 60px; /* Add space above the video section */
+    margin-bottom: 60px; /* Add space below the video section */
+    padding: 40px 0; /* Optional: Add padding */
+    background: #b1a8a8; /* Optional: Add a light background */
+}
+
+.about-video h3 {
+    text-align: center; /* Center the heading */
+    font-size: 2rem;
+    color: #4A2C2A; /* Match your theme color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.video-wrapper {
+    max-width: 800px; /* Limit the video width */
+    margin: 0 auto; /* Center the video */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    overflow: hidden; /* Ensure the video stays within the wrapper */
+}
+
+.video-wrapper video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the video is a block element */
+}
+
