@@ -1,0 +1,34 @@
+/* Hide everything except the table */
+body * {
+    visibility: hidden;
+}
+
+/* Ensure the table and its container are visible */
+.open-hours-container, .open-hours-container * {
+    visibility: visible;
+}
+
+/* Position the table for printing */
+.open-hours-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Hide the image */
+.open-hours-container img {
+    display: none;
+}
+
+/* Optional: Add some print-specific styles for the table */
+.open-hours-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.open-hours-container th, .open-hours-container td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}

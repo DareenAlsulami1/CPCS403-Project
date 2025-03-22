@@ -9,68 +9,68 @@ body {
 /* Header Styling */
 header {
     display: flex;
-    justify-content: space-between; /* Puts space between nav and logo */
-    align-items: flex-start; /* Aligns items to the top */
-    padding: 10px 20px; /* Adds some padding */
-    background-color: #E8D9C5; /* Optional: Add a background color */
-    border-bottom: 1px solid #ddd; /* Optional: Add a border */
-    position: relative; /* Needed for absolute positioning of the logo */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 10px 20px; 
+    background-color: #E8D9C5; 
+    border-bottom: 1px solid #ddd; 
+    position: relative; 
 }
 
 /* Navigation Menu Styling */
 nav ul {
     display: flex;
-    list-style: none; /* Removes bullet points */
+    list-style: none; 
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px; /* Adds space between menu items */
+    margin-right: 20px; 
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Removes margin from the last item */
+    margin-right: 0; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #333; /* Sets link color */
+    text-decoration: none; 
+    color: #333; 
     font-weight: bold;
-    font-size: 18px; /* Increases font size */
-    padding: 15px 20px; /* Adds padding to make the nav items taller */
-    display: inline-block; /* Ensures padding works correctly */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-size: 18px; 
+    padding: 15px 20px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: #D4C2A8; /* Adds a hover effect */
-    border-radius: 5px; /* Optional: Rounded corners on hover */
+    background-color: #D4C2A8; 
+    border-radius: 5px; 
 }
 
 /* Logo Styling */
 .logo {
-    position: absolute; /* Positions the logo absolutely within the header */
-    top: 10px; /* Adjust this value to move the logo down from the top */
-    right: 20px; /* Adjust this value to move the logo left from the right edge */
+    position: absolute; 
+    top: 10px; 
+    right: 20px;
 }
 
 .logo img {
-    height: 150px; /* Adjust the height of the logo */
-    width: auto; /* Maintains aspect ratio */
+    height: 150px; 
+    width: auto;
 }
 
 /* Footer styling */
 footer {
-    position: fixed; /* Fix the footer to the bottom */
-    bottom: 0; /* Stick it to the bottom */
-    left: 0; /* Align to the left edge */
-    width: 100%; /* Full width */
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Add some padding */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 footer p {
@@ -175,8 +175,7 @@ footer a:hover {
 
 
 
-
-/* Container for Form */
+/* feedback page styling */
 .container {
     display: flex;
     justify-content: center;
@@ -186,7 +185,6 @@ footer a:hover {
     margin-top: 100px;
 }
 
-/* Form styling */
 .contact-form {
     background-color: #fff;
     padding: 80px;
@@ -211,17 +209,16 @@ footer a:hover {
     color: #555;
 }
 
-/* Input and textarea styling */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
-    border: 2px solid #000; /* Black border */
+    border: 2px solid #000; 
     border-radius: 4px;
     font-size: 16px;
-    font-size: 18px; /* Bigger text */
+    font-size: 18px; 
 }
 
 .contact-form textarea {
@@ -229,7 +226,7 @@ footer a:hover {
     height: 150px;
 }
 
-/* Gender radio buttons */
+
 .contact-form .gender-options {
     margin-bottom: 15px;
 }
@@ -239,10 +236,9 @@ footer a:hover {
     font-weight: normal;
 }
 
-/* Submit button styling */
 .contact-form input[type="submit"] {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000; 
+    color: #fff; 
     padding: 15px 20px;
     border: none;
     border-radius: 4px;
@@ -253,39 +249,39 @@ footer a:hover {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #333; /* Darker black on hover */
+    background-color: #333; 
 }
 
 
 
-/* Open Hours Container styling */
+/* working Hours page styling */
 .open-hours-container {
-    display: flex; /* Use Flexbox for layout */
-    align-items: center; /* Vertically center the items */
-    gap: 40px; /* Add space between the image and table */
-    max-width: 1200px; /* Adjust based on your design */
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    max-width: 1200px; 
     width: 100%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     margin-top: 50px;
     padding: 20px;
 }
 
 
 
-/* Image styling */
+
 .open-hours-container img {
-    max-width: 400px; /* Adjust the image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
-/* Open Hours styling */
+
 .open-hours {
    
     padding: 20px;
     border-radius: 8px;
     font-weight: 600;
-    flex: 1; /* Allow the table to take remaining space */
+    flex: 1;
 }
 
 .open-hours h2 {
@@ -298,7 +294,7 @@ footer a:hover {
 /* Table styling */
 .open-hours table {
     width: 100%;
-    border-collapse: collapse; /* Remove spacing between cells */
+    border-collapse: collapse; 
 }
 
 .open-hours th,
@@ -312,25 +308,25 @@ footer a:hover {
 .open-hours th {
     font-weight: bold;
     color: #000;
-    border-bottom: 2px solid #000; /* Add a thicker line below the header */
+    border-bottom: 2px solid #000; 
 }
 
 .open-hours tr {
-    border-bottom: 1px solid #ccc; /* Add a line below each row */
+    border-bottom: 1px solid #ccc;
 }
 
 .open-hours tr:last-child {
-    border-bottom: none; /* Remove the line from the last row */
+    border-bottom: none; 
 }
 
 @media (max-width: 768px) {
     .open-hours-container {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Reduce gap between items */
+        flex-direction: column; 
+        gap: 20px;
     }
 
     .open-hours-container img {
-        max-width: 100%; /* Make the image full width */
+        max-width: 100%; 
     }
 }
 .open-hours td:nth-child(2) {
@@ -340,14 +336,52 @@ footer a:hover {
 .open-hours td[colspan="2"] {
     text-align: center;
     font-weight: bold;
-    color: orange; /* Tomato color for emphasis */
+    color: orange; 
 }
 
 .open-hours td[rowspan] {
-    vertical-align: middle; /* Center text vertically in merged cells */
+    vertical-align: middle; 
 }
 
+/* Address styling */
+address {
+    margin-top: 20px; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    font-style: normal; 
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.6; 
+    text-align: center;
+}
 
+address a {
+    color: orange; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+
+address a:hover {
+    text-decoration: underline; 
+}
+
+#working-hours-note p{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+/* Responsive design for address */
+@media (max-width: 768px) {
+    address {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 
 /* about page */
 h1, h2, h3 {
@@ -400,17 +434,6 @@ h1, h2, h3 {
 
 
 
-
-
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-}
-
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -422,55 +445,78 @@ h1, h2, h3 {
     margin: 0 auto;
 }
 
-/* About Section Layout */
+/* About Section  */
 .about-section {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 40px; /* Space between text and image */
-    align-items: center; /* Vertically center content */
-    margin: 200px; /* Space between sections */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    align-items: center; 
+    margin: 200px; 
 }
 
 .text-content {
-    padding-right: 20px; /* Optional: Add some padding */
+    padding-right: 20px; 
 }
 
 .image-content {
-    text-align: center; /* Center the image */
+    text-align: center;
 }
 
 .image-content img {
-    max-width: 100%; /* Ensure the image doesn't overflow */
+    max-width: 100%; 
     height: auto;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 10px; 
 }
 
 /* Video Section Styles */
 .about-video {
-    margin-top: 60px; /* Add space above the video section */
-    margin-bottom: 60px; /* Add space below the video section */
-    padding: 40px 0; /* Optional: Add padding */
-    background: #b1a8a8; /* Optional: Add a light background */
+    margin-top: 60px;
+    margin-bottom: 60px; 
+    padding: 40px 0; 
+    background: #b1a8a8; 
 }
 
 .about-video h3 {
-    text-align: center; /* Center the heading */
+    text-align: center; 
     font-size: 2rem;
-    color: #4A2C2A; /* Match your theme color */
-    margin-bottom: 20px; /* Space below the heading */
+    color: #4A2C2A; 
+    margin-bottom: 20px; 
 }
 
 .video-wrapper {
-    max-width: 800px; /* Limit the video width */
-    margin: 0 auto; /* Center the video */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    overflow: hidden; /* Ensure the video stays within the wrapper */
+    max-width: 800px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .video-wrapper video {
-    width: 100%; /* Make the video responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure the video is a block element */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
+/* Button styling */
+.about-section button {
+    background-color:  rgba(86, 73, 73, 0.791);
+    color: white; 
+    border: none; 
+    padding: 12px 24px; 
+    font-size: 18px; 
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer; 
+    
+    margin-top: 15px; 
+    display: block; 
+}
+
+.about-section button:hover {
+    background-color: rgba(50, 47, 47, 0.791); 
+    transform: scale(1.05);
+}
+
+.about-section button:active {
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
