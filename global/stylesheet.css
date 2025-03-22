@@ -91,16 +91,25 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+
 }
 
 /* Menu Section Header */
 .menuSectionHeader {
-    padding-top: 80px;
+    padding-top: 30px;
     display: block; 
     margin: auto; 
-    width: 30%; 
+    width: 35%; 
     color: wheat;
+}
+
+.sectionsDivider {
+    width:80%;
+    border: 1;
+    border-top: 1px solid #5e3023;
 }
 
 /* Menu Item Styling */
@@ -108,6 +117,7 @@ footer a:hover {
     text-align: center;
     background-color: #f3e9dc;
     padding: 15px;
+
     border-radius: 8px;
 }
 
@@ -115,9 +125,9 @@ footer a:hover {
 .menuItem img {
     width: 100%;
     max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    -webkit-filter: drop-shadow(5px 5px 5px #a5a5a548);
+    filter: drop-shadow(5px 5px 5px #a5a5a548);
+
 }
 
 /* Heading Styling */
@@ -125,6 +135,7 @@ footer a:hover {
     font-size: 1.5em;
     color: #5e3023;
     margin: 10px 0;
+    font-weight: bolder;
 }
 
 /* Item Description Styling */
@@ -133,6 +144,7 @@ footer a:hover {
     color: #5e3023;
     margin-bottom: 15px;
     line-height: 1.4;
+
 }
 
 /* Price Styling */
@@ -142,39 +154,69 @@ footer a:hover {
     font-weight: bold;
 }
 
-.weeklyOffersSection img {
 
+/* homepage Styling */
+
+.introduction-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 40px; /* Space between text and image */
+    align-items: center; /* Vertically center content */
+    margin: 100px; /* Space between sections */
 }
-.weeklyOffersSection table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #2e2b28; /* Dark chalkboard-like background */
-    color: #f4f1de; /* Chalk-like text */
+
+.introduction-content h2 {
+    font-size: 45px;
+}
+
+.text-content {
+    padding-right: 20px; /* Optional: Add some padding */
+}
+
+.image-content {
+    text-align: left; /* Center the image */
+}
+
+.image-content img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.weeklyOffers-content{
+    background-color: #585a49;
+    display: flex;
+    flex-direction: column; /* Stack items (image + table) vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     text-align: center;
-    border: 4px solid #d4a373; /* Wooden border effect */
-    margin-left: 100px;
-    margin-right: 100px;
-
+    padding: 100px;
 }
 
-.weeklyOffersSection th, .weeklyOffersSection td {
-    border: 2px solid #d4a373; /* Light brown for a wooden effect */
-    padding: 15px;
+.weeklyOffers-content img {
+    display: block; 
+    margin: auto; 
+    width: 45%; 
+    margin-bottom: 50px;
 }
 
-.weeklyOffersSection th {
-    background-color: #3d3a36; /* Slightly lighter chalkboard look */
-    color: #f4f1de;
-    font-size: 1.3em;
+.weeklyOffers-content table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #f1eada;
+    margin-bottom: 300px;
+    margin: 0 auto;
+    
 }
-
-.weeklyOffersSection td {
-    font-size:1em;
+.weeklyOffers-content th, td {
+    padding: 10px;
+    text-align: center;
+    min-width: 150px;
 }
-
-
-
-
+.weeklyOffers-content th {
+    border-bottom: 1px solid #f1eada;
+}
 
 /* form Styling */
 
@@ -339,3 +381,4 @@ footer a:hover {
 .open-hours td:nth-child(2) {
     color: orange;
 }
+
