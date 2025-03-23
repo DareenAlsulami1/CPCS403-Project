@@ -21,7 +21,7 @@ body * {
     display: none;
 }
 
-/* Optional: Add some print-specific styles for the table */
+
 .open-hours-container table {
     width: 100%;
     border-collapse: collapse;
