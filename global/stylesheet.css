@@ -128,19 +128,19 @@ footer p {
     border-bottom: 1px solid #f1eada;
 }
 
-.quote-content{
-    display: flex;
-    flex-direction: column; /* Stack items (image + table) vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    text-align: center;
-    padding: 200px;
-    color: #3c2827;
-}
 
-.quote-content blockquote {
-    font-size: 55px;
-    font-weight: bold;
+.weather-section {
+    background-color: #f1eada;
+    padding: 150px;
+    display: flex;
+    flex-direction: column; /* Stack image and text */
+    justify-content: center; /* Vertical center */
+    align-items: center;     /* Horizontal center */
+    text-align: center;      /* Center the text itself */   
+}
+.weather-section .image-content {
+    width: 100%;
+    max-width: 640px;
 }
 
 .signature-section{
@@ -149,7 +149,7 @@ footer p {
 }
 
 
-.signature-section p {
+.signature-section, .loyality-card-section p {
     text-align: center;
     font-size: 20px;
     color:#f1eada;
@@ -570,11 +570,29 @@ h1, h2, h3 {
     border-radius: 10px; 
 }
 
+.quote-section{
+    background-color: #393b2e;
+    color: #f1eada;
+
+}
+.quote-content{
+    display: flex;
+    flex-direction: column; /* Stack items (image + table) vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+    padding: 200px;
+    color: #f1eada;
+}
+
+.quote-content blockquote {
+    font-size: 55px;
+    font-weight: bold;
+}
+
 /* Video Section Styles */
 .about-video {
-    margin-top: 60px;
-    margin-bottom: 60px; 
-    padding: 40px 0; 
+    padding: 60px 60px; 
     background: #b1a8a8; 
 }
 
@@ -621,4 +639,29 @@ h1, h2, h3 {
 
 .about-section button:active {
     transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+/* Loyalty Program*/
+
+.loyality-card-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns side-by-side */
+    gap: 40px;
+    padding: 150px 150px;
+}
+
+.loyality-card-content h2 {
+    font-size: 45px;
+    color:#3c2827;;
+}
+
+.loyality-card-content .text-content p {
+    color:#3c2827;
+    text-align: left;
+}
+
+.pdf-content {
+    display: flex; 
+    max-width: 100%; 
+    height: auto;
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My Heading</h2>
+
+<p>Play around with the code and click on the "Run" button to view the result.</p>
+<h2 id="temp">Loading temperature...</h2>
+
+
+<script>
+fetch ('http://api.weatherapi.com/v1/current.json?key=e3a9206e2984497aba320952251405&q=Jeddah') 
+.then(response => response.json()) 
+.then( data => {
+    const temperature = data.current.temp_c;
+    if(temperature > 25){
+        document.getElementById("temp").textContent = `Temperature in Jeddah: ${temperature}°C, Perfect weather for a cold drink from our Menu! `;
+    } else {
+        document.getElementById("temp").textContent = `Temperature in Jeddah: ${temperature}°C, Perfect weather for a Hot drink from our Menu!`;
+    }
+    
+})  .catch(error => console.error("Error fetching weather data:", error));
+
+</script>
+
+</body>
+</html>
