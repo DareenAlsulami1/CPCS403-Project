@@ -15,25 +15,12 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
 
 <body>
     <!-- Header -->
-    <header>
+    <?php
+    $prefix = "../"; 
+    include $prefix . 'includes/header.php';
+    include $prefix . 'includes/links.php';
+    ?>
 
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="../index.php">Home</a></li>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="services.php">Our Services</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="schedule.php">Working hours</a></li>
-                <li><a href="feedback.php">Feedback</a></li>
-               
-            </ul>
-        </nav>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="../images/luna.png" alt="luna cafe Logo">
-        </div>
-    </header>
     <div class="open-hours-container">
         <img src="../images/cat_working_houes.png" alt="cat working house image">
         <div class="open-hours">
@@ -77,20 +64,19 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
         </div>
     </div>
 
-    <div id="working-hours-note">
+    <div id="working-hours-note" onclick="showContactMessage()">
         <p>working hours maybe differ on holidays, contact us for further inquiries:</p>
             <address>
                 Phone: <a href="tel:+966555555555">+966 555 555 555</a><br>
                 Email: <a href="mailto:luna.cafe@hmail.com">luna.cafe@gmail.com</a><br>
                 Address: 123 Luna Street, Jeddah, Saudi Arabia
             </address>
-        
-
     </div>
 
 
     <!-- Footer -->
-    <?php include ('../footer.php'); ?>
+    <?php include ('../includes/footer.php'); ?>
+    <script src="../scripts/contactMessage.js"></script>
 </body>
 
 </html>

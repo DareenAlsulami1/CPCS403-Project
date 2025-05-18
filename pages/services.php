@@ -4,53 +4,40 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../global/stylesheet.css">
     <title>Services</title>
 </head>
-<body>
-   <!-- Header -->
-   <header>
-   
-<!-- Navigation Menu -->
-<nav>
-<ul>
-    <li><a href="../index.php">Home</a></li>
-    <li><a href="about.php">About Us</a></li>
-    <li><a href="services.php">Our Services</a></li>
-    <li><a href="menu.php">Menu</a></li>
-    <li><a href="schedule.php">Working hours</a></li>
-    <li><a href="feedback.php">Feedback</a></li>
-   
-</ul>
-</nav>
-<!-- Logo -->
-<div class="logo">
-    <img src="../images/luna.png" alt="luna cafe Logo">
-</div>
 
-</header>
+<body>
+    <!-- Header -->
+    <?php
+    $prefix = "../"; 
+    include $prefix . 'includes/header.php';
+    include $prefix . 'includes/links.php';
+    ?>
 
     <div class="services-section">
-            <h2>Explore The Luna Cafe & Bakery Website !</h2>
-            <p>
-                This website is a bridge between us and our customers,
-                designed to enhance your experience and keep you connected with our café.  
-                Whether you’re looking to explore our offerings, check our working hours, 
-                or share your valuable feedback, everything you need is just a click away. 
-                We believe in creating a space where you can easily access information and enjoy the convenience of staying updated with our latest menu and services.    
-            </p>
-    </div>    
-    
+        <h2>Explore The Luna Cafe & Bakery Website !</h2>
+        <p>
+            This website is a bridge between us and our customers,
+            designed to enhance your experience and keep you connected with our café.
+            Whether you’re looking to explore our offerings, check our working hours,
+            or share your valuable feedback, everything you need is just a click away.
+            We believe in creating a space where you can easily access information and enjoy the convenience of staying updated with our latest menu and services.
+        </p>
+    </div>
+
     <div class="menu-feedback-section">
         <div class="text-content">
             <h2>Explore The Menu</h2>
             <p>
-                Our menu showcases a variety of delicious options, 
-                carefully crafted with fresh ingredients to satisfy every craving. 
-                From aromatic coffees and refreshing beverages to mouthwatering meals and sweet treats, 
+                Our menu showcases a variety of delicious options,
+                carefully crafted with fresh ingredients to satisfy every craving.
+                From aromatic coffees and refreshing beverages to mouthwatering meals and sweet treats,
                 there’s something for everyone. Browse through our selection and discover new favorites to enjoy at our café.
             </p>
         </div>
@@ -66,9 +53,9 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
         <div class="text-content">
             <h2>Check Our Working Hours</h2>
             <p>
-                To make your visit more convenient, 
-                we provide clear details about our working hours so you always know when to stop by. 
-                Whether you’re planning an early morning coffee run or a cozy evening meal, 
+                To make your visit more convenient,
+                we provide clear details about our working hours so you always know when to stop by.
+                Whether you’re planning an early morning coffee run or a cozy evening meal,
                 our schedule ensures you can plan your visit accordingly.
             </p>
         </div>
@@ -78,9 +65,9 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
         <div class="text-content">
             <h2>Give Us Your Feedback</h2>
             <p>
-                Your feedback matters to us! We have made it easy for you to share your thoughts, 
-                suggestions, and experiences. Whether it’s a compliment, a request, or an idea for improvement, 
-                we welcome your input to help us serve you better. Let us know what you think, and together, 
+                Your feedback matters to us! We have made it easy for you to share your thoughts,
+                suggestions, and experiences. Whether it’s a compliment, a request, or an idea for improvement,
+                we welcome your input to help us serve you better. Let us know what you think, and together,
                 we can continue to make our café a place you love to visit.
             </p>
         </div>
@@ -89,7 +76,8 @@ Name: Dareen Hamed Alsulami    ID:2105810    Section: GAR
         </div>
     </div>
 
- <!-- Footer -->
- <?php include ('../footer.php'); ?>
+    <!-- Footer -->
+    <?php include('../includes/footer.php'); ?>
 </body>
+
 </html>

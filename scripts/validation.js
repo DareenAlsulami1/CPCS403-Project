@@ -40,7 +40,6 @@ function validateFeedbackForm() {
         return false;
     }
 
-
     return true;
 
 
